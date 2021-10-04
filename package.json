@@ -1,0 +1,20 @@
+{
+	"name": "time-tracking-dashboard-main",
+	"version": "1.0.0",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"build-css": "tailwindcss build -i src/styles.css -o dist/assets/css/index.css"
+	},
+	"devDependencies": {
+		"tailwindcss": "^2.2.16"
+	},
+	"repository": "https://github.com/Yellow-May/Frontend-Mentor-time-tracking-dashboard.git",
+	"author": "The Yellow May <yellow.may.21@gmail.com>",
+	"license": "MIT",
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	]
+}
