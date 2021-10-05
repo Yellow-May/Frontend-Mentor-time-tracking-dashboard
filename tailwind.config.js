@@ -5,6 +5,8 @@ module.exports = {
 		colors: {
 			transparent: "transparent",
 			current: "currentColor",
+			white: "#fff",
+			black: "#000",
 			blue: {
 				DEFAULT: "hsl(246, 80%, 60%)",
 				soft: "hsl(195, 74%, 62%)",
@@ -22,6 +24,14 @@ module.exports = {
 			"lime-green": "hsl(145, 58%, 55%)",
 		},
 		extend: {
+			backgroundImage: {
+				work: "url('../images/icon-work.svg')",
+				study: "url('../images/icon-study.svg')",
+				play: "url('../images/icon-play.svg')",
+				social: "url('../images/icon-social.svg')",
+				exercise: "url('../images/icon-exercise.svg')",
+				"self-care": "url('../images/icon-self-care.svg')",
+			},
 			fontFamily: {
 				rubik: ["Rubik", "sans-serif"],
 			},

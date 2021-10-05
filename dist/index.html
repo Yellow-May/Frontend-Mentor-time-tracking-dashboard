@@ -3,89 +3,118 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" sizes="32x32" href=".assets/images/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | Time tracking dashboard</title>
 		<link rel="stylesheet" href="./assets/css/index.css" />
 	</head>
-	<body>
-		Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-		<!-- daily -->
-		Previous - 7hrs
-		<!-- daily -->
-		32hrs
-		<!-- weekly -->
-		Previous - 36hrs
-		<!-- weekly -->
-		103hrs
-		<!-- monthly -->
-		Previous - 128hrs
-		<!-- monthly -->
+	<body class="md:flex flex-col items-center justify-center">
+		<main class="md:grid-cols-4">
+			<div class="user md:row-span-2">
+				<div class="content">
+					<img src="./assets/images/image-jeremy.png" alt="Jeremy" />
+					<div>
+						<span class="text-xl text-blue-pale">Report for</span>
+						<p class="text-3xl text-white md:text-4xl md:font-bold lg:text-5xl">Jeremy Robson</p>
+					</div>
+				</div>
+				<div class="buttons">
+					<button title="daily">Daily</button>
+					<button class="active" title="weekly">Weekly</button>
+					<button title="monthly">Monthly</button>
+				</div>
+			</div>
 
-		Play 1hr
-		<!-- daily -->
-		Previous - 2hrs
-		<!-- daily -->
-		10hrs
-		<!-- weekly -->
-		Previous - 8hrs
-		<!-- weekly -->
-		23hrs
-		<!-- monthly -->
-		Previous - 29hrs
-		<!-- monthly -->
+			<div class="card bg-light-red-work bg-work">
+				<div data-name="work">
+					<div>
+						<span class="text-xl">Work</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">32hrs</span>
+						<span class="previous text-sm">Last Week - 36hrs</span>
+					</div>
+				</div>
+			</div>
 
-		Study 0hrs
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		4hrs
-		<!-- weekly -->
-		Previous - 7hrs
-		<!-- weekly -->
-		13hrs
-		<!-- monthly -->
-		Previous - 19hrs
-		<!-- monthly -->
+			<div class="card bg-blue-soft bg-play">
+				<div data-name="play">
+					<div>
+						<span class="text-xl">Play</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">10hrs</span>
+						<span class="previous text-sm">Last Week - 8hrs</span>
+					</div>
+				</div>
+			</div>
 
-		Exercise 1hr
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		4hrs
-		<!-- weekly -->
-		Previous - 5hrs
-		<!-- weekly -->
-		11hrs
-		<!-- monthly -->
-		Previous - 18hrs
-		<!-- monthly -->
+			<div class="card bg-light-red-study bg-study">
+				<div data-name="study">
+					<div>
+						<span class="text-xl">Study</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">4hrs</span>
+						<span class="previous text-sm">Last Week - 7hrs</span>
+					</div>
+				</div>
+			</div>
 
-		Social 1hr
-		<!-- daily -->
-		Previous - 3hrs
-		<!-- daily -->
-		5hrs
-		<!-- weekly -->
-		Previous - 10hrs
-		<!-- weekly -->
-		21hrs
-		<!-- monthly -->
-		Previous - 23hrs
-		<!-- monthly -->
+			<div class="card bg-lime-green bg-exercise">
+				<div data-name="exercise">
+					<div>
+						<span class="text-xl">Exercise</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">4hrs</span>
+						<span class="previous text-sm">Last Week - 5hrs</span>
+					</div>
+				</div>
+			</div>
 
-		Self Care 0hrs
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		2hrs
-		<!-- weekly -->
-		Previous - 2hrs
-		<!-- weekly -->
-		7hrs
-		<!-- monthly -->
-		Previous - 11hrs
-		<!-- monthly -->
+			<div class="card bg-violet bg-social">
+				<div data-name="social">
+					<div>
+						<span class="text-xl">Social</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">5hrs</span>
+						<span class="previous text-sm">Last Week - 10hrs</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="card bg-soft-orange bg-self-care">
+				<div data-name="self-care">
+					<div>
+						<span class="text-xl">Self Care</span>
+						<button title="ellipsis">
+							<img src="./assets/images/icon-ellipsis.svg" alt="ellipsis" />
+						</button>
+					</div>
+					<div>
+						<span class="current text-2xl md:text-4xl">2hrs</span>
+						<span class="previous text-sm">Last Week - 2hrs</span>
+					</div>
+				</div>
+			</div>
+		</main>
 
 		<div class="attribution">
 			Challenge by
@@ -102,5 +131,7 @@
 				>The Yellow May</a
 			>.
 		</div>
+
+		<script src="./assets/js/app.js" type="module"></script>
 	</body>
 </html>
